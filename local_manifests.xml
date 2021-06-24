@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="github"
+          fetch="https://github.com" />
+
+  <!-- Trees -->
+  <project path="device/xiaomi/ginkgo" name="Dreadwyrm/device_xiaomi_ginkgo" remote="github" revision="A11" />
+  <project path="kernel/xiaomi/ginkgo" name="madmax7896/kernel_xiaomi_ginkgo" remote="github" revision="11.0" />
+  <project path="vendor/xiaomi/ginkgo" name="Dreadwyrm/vendor_xiaomi_ginkgo" remote="github" revision="A11" />
+</manifest>
