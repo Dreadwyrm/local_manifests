@@ -8,4 +8,6 @@
   <project path="device/xiaomi/ginkgo" name="Dreadwyrm/device_xiaomi_ginkgo" remote="github" revision="A11-LOS" />
   <project path="kernel/xiaomi/ginkgo" name="madmax7896/kernel_xiaomi_ginkgo" remote="github" revision="11.0" />
   <project path="vendor/xiaomi/ginkgo" name="Dreadwyrm/vendor_xiaomi_ginkgo" remote="github" revision="A11" />
+  <project path="vendor/miuicamera" name="trinket-devs/vendor_miuicamera" remote="github" revision="11.0" />
+  <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="ruby-12" />
 </manifest>
