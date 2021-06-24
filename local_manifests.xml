@@ -14,7 +14,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="ruby-12" />
   
   #patch
-  <remove-project name="android_frameworks_av" />
+  <remove-project name="frameworks_av" />
 	<project path="frameworks/av" name="frameworks_av" remote="me" revision="elle" />
   
 </manifest>
