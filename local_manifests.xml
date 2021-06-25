@@ -13,6 +13,6 @@
   
   #patch
   <remove-project name="frameworks_av" />
-	<project path="frameworks/av" name="frameworks_av" remote="github" revision="elle" />
+	<project path="frameworks/av" name="Evolution-X/frameworks_av" remote="github" revision="elle" />
   
 </manifest>
