@@ -3,8 +3,6 @@
   
   <remote name="github"
           fetch="https://github.com" />
-  <remote name="me"
-          fetch="https://github.com/Dreadwyrm" />
 
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="Dreadwyrm/device_xiaomi_ginkgo" remote="github" revision="A11-LOS" />
@@ -15,6 +13,6 @@
   
   #patch
   <remove-project name="frameworks_av" />
-	<project path="frameworks/av" name="frameworks_av" remote="me" revision="elle" />
+	<project path="frameworks/av" name="frameworks_av" remote="github" revision="elle" />
   
 </manifest>
