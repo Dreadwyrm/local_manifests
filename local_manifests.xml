@@ -12,7 +12,10 @@
 	
   <remote name="ThankYouMario"
           fetch="https://github.com/ThankYouMario" />
-
+  
+  <remote name="Evolution-X"
+          fetch="https://github.com/Evolution-X" />
+  
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Dreadwyrm" revision="A11-LOS" clone-depth="1" />
   <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="madmax7896" revision="11.0" clone-depth="1" />
@@ -21,7 +24,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="proprietary_vendor_qcom_sdclang" remote="ThankYouMario" revision="ruby-12" clone-depth="1" />
   
   #patch
-  <remove-project name="frameworks_av" /
-  <project path="frameworks/av" name="Evolution-X/frameworks_av" remote="Evolution-X" revision="elle" clone-depth="1"/>
+  <remove-project name="frameworks/av" />
+  <project path="frameworks/av" name="frameworks_av" remote="Evolution-X" revision="elle" clone-depth="1"/>
   
 </manifest>
