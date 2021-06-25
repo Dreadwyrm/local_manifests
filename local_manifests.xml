@@ -17,7 +17,7 @@
           fetch="https://github.com/Evolution-X" />
   
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Dreadwyrm" revision="A11-LOS" clone-depth="1" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Dreadwyrm" revision="exTHmUI-11" clone-depth="1" />
   <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="madmax7896" revision="11.0" clone-depth="1" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Dreadwyrm" revision="A11" clone-depth="1" />
   <project path="vendor/miuicamera" name="vendor_miuicamera" remote="trinket-devs" revision="11.0" />
