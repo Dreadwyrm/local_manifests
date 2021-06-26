@@ -24,7 +24,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="proprietary_vendor_qcom_sdclang" remote="ThankYouMario" revision="ruby-12" clone-depth="1" />
   
   <!-- Frameworks -->
-  <remove-project name="android/frameworks/av" />
-  <project path="frameworks/av" name="frameworks_av" remote="Evolution-X" revision="elle" clone-depth="1"/>
+  <remove-project name="android_frameworks_av" />
+  <project path="frameworks/av" name="frameworks_av" remote="Evolution-X" revision="elle" clone-depth="1" />
   
 </manifest>
