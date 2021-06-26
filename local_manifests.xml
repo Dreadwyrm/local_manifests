@@ -23,8 +23,8 @@
   <project path="vendor/miuicamera" name="vendor_miuicamera" remote="trinket-devs" revision="11.0" />
   <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="proprietary_vendor_qcom_sdclang" remote="ThankYouMario" revision="ruby-12" clone-depth="1" />
   
-  #patch
-  <remove-project name="frameworks/av" />
+  <!-- Frameworks -->
+  <remove-project name="android/frameworks/av" />
   <project path="frameworks/av" name="frameworks_av" remote="Evolution-X" revision="elle" clone-depth="1"/>
   
 </manifest>
