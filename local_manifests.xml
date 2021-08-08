@@ -45,5 +45,9 @@
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="LOS" revision="lineage-18.1" />
   <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="LOS" revision="lineage-18.1" />
   <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="LOS" revision="lineage-18.1" />
+
+  <!-- Needed custom Frameworks -->
+  <remove-project name="android_frameworks_av" />
+  <project path="frameworks/av" name="ros_frameworks_av" remote="Me" revision="r11.0" />
   
 </manifest>
