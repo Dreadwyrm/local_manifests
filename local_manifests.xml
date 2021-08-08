@@ -13,8 +13,11 @@
   <remote name="ArrowOS"
           fetch="https://github.com/ArrowOS" />
 
+  <remote name="LOS"
+          fetch="https://github.com/LineageOS" />
+
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="A11" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="r11.0" />
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="gr" revision="11.0" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Me" revision="A11" />
   
@@ -25,15 +28,22 @@
   <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="proprietary_vendor_qcom_sdclang" remote="Clang" revision="ruby-12" clone-depth="1" />
   
   <!-- Needed custom HALs -->
-  <remove-project name="hardware_qcom-caf_sm8150_audio" />
-  <remove-project name="hardware_qcom-caf_sm8150_display" />
-  <remove-project name="hardware_qcom-caf_sm8150_media" />
-  <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
-  <remove-project name="android_vendor_qcom_opensource_power" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="ArrowOS" revision="arrow-11.0" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="ArrowOS" revision="arrow-11.0" />
+  <project path="hardware/broadcom/nfc" name="android_hardware_broadcom_nfc" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="LOS" revision="lineage-18.1" />
   
 </manifest>
