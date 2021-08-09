@@ -43,8 +43,8 @@
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="LOS" revision="lineage-18.1" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="LOS" revision="lineage-18.1" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="LOS" revision="lineage-18.1" />
-  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="LOS" revision="lineage-18.1" />
-  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="LOS" revision="lineage-18.1" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="LOS" revision="lineage-18.1-sn100x" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="LOS" revision="lineage-18.1-sn100x" />
 
   <!-- Needed custom Frameworks -->
   <remove-project name="android_frameworks_av" />
