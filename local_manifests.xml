@@ -48,7 +48,9 @@
 
   <!-- Needed custom Frameworks -->
   <remove-project name="android_frameworks_av" />
+  <remove-project name="android_frameworks_base" />
   <project path="frameworks/av" name="ros_frameworks_av" remote="Me" revision="r11.0" />
+  <project path="frameworks/base" name="ros_frameworks_base" remote="Me" revision="r11.0" />
 
   <!-- Use custom Vendor -->
   <remove-project name="android_vendor_revengeos" />
