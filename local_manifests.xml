@@ -16,6 +16,9 @@
   <remote name="LOS"
           fetch="https://github.com/LineageOS" />
 
+  <remote name="syberia"
+          fetch="https://github.com/syberia-project" />
+
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="r11.0" />
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="gr" revision="11.0" />
@@ -55,5 +58,8 @@
   <!-- Use custom Vendor -->
   <remove-project name="android_vendor_revengeos" />
   <project path="vendor/revengeos" name="android_vendor_revengeos" remote="Me" revision="r11.0" />
+
+  <!-- Stitchimage -->
+  <project path="external/asus/stitchimage" name="platform_external_asus_stitchimage" remote="syberia" revision="11.0" />
 
 </manifest>
