@@ -35,12 +35,10 @@
   <remove-project name="LineageOS/android_hardware_qcom_display" />
   <remove-project name="LineageOS/android_hardware_qcom_media" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" />
-  <remove-project name="AOSPA/android_vendor_qcom-opensource_vibrator" />
   <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="ArrowOS" revision="arrow-11.0" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="ArrowOS" revision="arrow-11.0" />
   <project path="hardware/broadcom/nfc" name="android_hardware_broadcom_nfc" remote="LOS" revision="lineage-18.1" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="LOS" revision="lineage-18.1" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="LOS" revision="lineage-18.1" />
@@ -51,13 +49,7 @@
 
   <!-- Needed custom Frameworks -->
   <remove-project name="android_frameworks_av" />
-  <remove-project name="android_frameworks_base" />
   <project path="frameworks/av" name="ros_frameworks_av" remote="Me" revision="r11.0" />
-  <project path="frameworks/base" name="ros_frameworks_base" remote="Me" revision="r11.0" />
-
-  <!-- Use custom Vendor -->
-  <remove-project name="android_vendor_revengeos" />
-  <project path="vendor/revengeos" name="android_vendor_revengeos" remote="Me" revision="r11.0" />
 
   <!-- Stitchimage -->
   <project path="external/asus/stitchimage" name="platform_external_asus_stitchimage" remote="syberia" revision="11.0" />
