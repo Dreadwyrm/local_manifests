@@ -38,7 +38,9 @@
 
   <!-- Needed custom Frameworks -->
   <remove-project name="frameworks_av" />
+  <remove-project name="frameworks_base" />
   <project path="frameworks/av" name="lhos_frameworks_av" remote="Me" revision="raft" />
+  <project path="frameworks/base" name="lhos_frameworks_base" remote="Me" revision="raft" />
 
   <!-- Needed custom Telephony -->
   <remove-project name="platform/frameworks/opt/telephony" />
