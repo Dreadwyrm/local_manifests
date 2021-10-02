@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="xd"
+          fetch="https://github.com/xdroid-ginkgo"
+          revision="eleven" />
+
+  <!-- Trees -->
+  <project path="device/xiaomi/ginkgo" name="xd_device_xiaomi_ginkgo" remote="xd" revision="eleven" />
+  <project path="kernel/xiaomi/ginkgo" name="xd_kernel_xiaomi_ginkgo" remote="xd" revision="eleven" />
+  <project path="vendor/xiaomi/ginkgo" name="xd_vendor_xiaomi_ginkgo" remote="xd" revision="eleven" />
+  
+  <!-- MIUI Camera -->
+  <project path="vendor/miuicamera" name="xd_vendor_miuicamera" remote="xd" revision="eleven" />
+
+  <!-- Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="xd_proprietary_vendor_qcom_sdclang" remote="xd" revision="ruby-12" clone-depth="1" />
+  
+  <!-- Hardware Stuff -->
+  <remove-project name="android_hardware_qcom_audio" />
+  <remove-project name="android_hardware_qcom_media" />
+  <remove-project name="hw_display_sm8150" />
+  <remove-project name="android_hardware_google_pixel" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="xd_hardware_qcom_audio" remote="xd" revision="eleven-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="xd_hardware_qcom_media" remote="xd" revision="eleven-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="xd_hardware_qcom_display" remote="xd" revision="eleven-caf-sm8150" />
+  <project path="hardware/google/pixel" name="xd_hardware_google_pixel" remote="xd" />
+  <project path="hardware/google/pixel-sepolicy" name="xd_hardware_google_pixel-sepolicy" remote="xd" />
+  <project path="hardware/xiaomi" name="xd_hardware_xiaomi" remote="xd" />
+
+  <!-- Vendor Stuff -->
+  <remove-project name="xd_vendor_qcom_opensource_power" />
+  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power" remote="xd" />
+
+  <!-- Sepolicy Stuff -->
+  <remove-project name="xd_system_sepolicy" />
+  <remove-project name="xd_device_xdroid_sepolicy" />
+  <project path="system/sepolicy" name="xd_system_sepolicy" remote="xd" revision="eleven" />
+  <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xd" revision="eleven" />
+
+  <!-- Framework Stuff -->
+  <remove-project name="xd_frameworks_av" />
+  <remove-project name="xd_frameworks_base" />
+  <project path="frameworks/av" name="xd_frameworks_av" remote="xd" revision="eleven" />
+  <project path="frameworks/base" name="xd_frameworks_base" remote="xd" revision="eleven" />
+  
+  <!-- Packages Stuff -->
+  <remove-project name="platform/packages/apps/Nfc" />
+  <remove-project name="xd_packages_apps_Settings" />
+  <project path="packages/apps/Nfc" name="xd_packages_apps_Nfc" remote="xd" revision="eleven" />
+  <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xd" revision="eleven" />
+  
+</manifest>
