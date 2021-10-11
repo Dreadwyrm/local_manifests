@@ -29,7 +29,10 @@
 
   <!-- Vendor Stuff -->
   <remove-project name="xd_vendor_qcom_opensource_power" />
+  <remove-project name="android_vendor_qcom_opensource_vibrator" />
   <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power" remote="xd" />
+  <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_power" remote="xd" />
+
 
   <!-- Sepolicy Stuff -->
   <remove-project name="xd_system_sepolicy" />
