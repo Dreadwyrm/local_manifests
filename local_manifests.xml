@@ -10,8 +10,11 @@
   <remote name="ArrowOS"
           fetch="https://github.com/ArrowOS" />
 
+  <remote name="banana-devices"
+          fetch="https://github.com/bananadroid-devices" />
+
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="Banana" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="banana-devices" revision="eleven" />
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="Me" revision="11.0" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Me" revision="A11" />
   
