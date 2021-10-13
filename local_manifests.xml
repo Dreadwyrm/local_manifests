@@ -13,9 +13,12 @@
   <remote name="banana-devices"
           fetch="https://github.com/bananadroid-devices" />
 
+  <remote name="octavi"
+          fetch="https://github.com/OctaviOS-Devices" />
+
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="banana-devices" revision="eleven" />
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="Me" revision="11.0" />
+  <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="octavi" revision="main" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Me" revision="A11" />
   
   <!-- MIUI Camera -->
