@@ -2,12 +2,14 @@
 <manifest>
   
   <remote name="xd"
-          fetch="https://github.com/xdCAF-ginkgo"
-          revision="eleven" />
+          fetch="https://github.com/xdCAF-ginkgo" />
+
+  <remote name="enn"
+          fetch="https://github.com/Enprytna" />
 
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="xd_device_xiaomi_ginkgo" remote="xd" revision="eleven" />
-  <project path="kernel/xiaomi/ginkgo" name="xd_kernel_xiaomi_ginkgo" remote="xd" revision="eleven" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="enn" revision="12" />
   <project path="vendor/xiaomi/ginkgo" name="xd_vendor_xiaomi_ginkgo" remote="xd" revision="eleven" />
   
   <!-- MIUI Camera -->
