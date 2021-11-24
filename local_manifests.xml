@@ -2,7 +2,7 @@
 <manifest>
   
   <remote name="xd"
-          fetch="https://github.com/xdroid-ginkgo"
+          fetch="https://github.com/xdCAF-ginkgo"
           revision="eleven" />
 
   <!-- Trees -->
@@ -21,35 +21,16 @@
   <remove-project name="android_hardware_qcom_media" />
   <remove-project name="hw_display_sm8150" />
   <remove-project name="android_hardware_google_pixel" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="xd_hardware_qcom_audio" remote="xd" revision="eleven-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="xd_hardware_qcom_media" remote="xd" revision="eleven-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="xd_hardware_qcom_display" remote="xd" revision="eleven-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="xd_hardware_qcom_audio" remote="xd" revision="xd-11.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="xd_hardware_qcom_media" remote="xd" revision="xd-11.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="xd_hardware_qcom_display" remote="xd" revision="xd-11.0-caf-sm8150" />
   <project path="hardware/google/pixel" name="xd_hardware_google_pixel" remote="xd" />
   <project path="hardware/google/pixel-sepolicy" name="xd_hardware_google_pixel-sepolicy" remote="xd" />
 
   <!-- Vendor Stuff -->
   <remove-project name="xd_vendor_qcom_opensource_power" />
   <remove-project name="android_vendor_qcom_opensource_vibrator" />
-  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power" remote="xd" />
-  <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_power" remote="xd" />
-
-
-  <!-- Sepolicy Stuff -->
-  <remove-project name="xd_system_sepolicy" />
-  <remove-project name="xd_device_xdroid_sepolicy" />
-  <project path="system/sepolicy" name="xd_system_sepolicy" remote="xd" revision="eleven" />
-  <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xd" revision="eleven" />
-
-  <!-- Framework Stuff -->
-  <remove-project name="xd_frameworks_av" />
-  <remove-project name="xd_frameworks_base" />
-  <project path="frameworks/av" name="xd_frameworks_av" remote="xd" revision="eleven" />
-  <project path="frameworks/base" name="xd_frameworks_base" remote="xd" revision="eleven" />
-  
-  <!-- Packages Stuff -->
-  <remove-project name="platform/packages/apps/Nfc" />
-  <remove-project name="xd_packages_apps_Settings" />
-  <project path="packages/apps/Nfc" name="xd_packages_apps_Nfc" remote="xd" revision="eleven" />
-  <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xd" revision="eleven" />
+  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power" remote="xd" revision="eleven" />
+  <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_vibrator" remote="xd" revision="eleven" />
   
 </manifest>
