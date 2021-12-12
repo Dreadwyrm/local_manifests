@@ -45,8 +45,6 @@
   <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-sn100x" />
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
-    <!-- Add guard for hardware/nxp dir -->
-    <linkfile src="os_pickup.bp" dest="hardware/nxp/Android.bp" />
 
   <!-- Sepolicy Stuff -->
   <remove-project name="TheXPerienceProject/android_device_xperience_sepolicy" />
@@ -59,5 +57,13 @@
   <remove-project name="TheXPerienceProject/vendor_qcom-opensource_power" />
 
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="Arrow" revision="arrow-12.0" />
+  
+  <!-- Add guard for nxp stuff -->
+  <linkfile src="os_pickup.bp" dest="hardware/nxp/Android.bp" />
+  <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+  <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+  <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+  <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+  <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
 
 </manifest>
