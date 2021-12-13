@@ -55,7 +55,7 @@
 
   <!-- Vendor Stuff -->
   <remove-project name="TheXPerienceProject/vendor_qcom-opensource_power" />
-  <remove-project name="TheXPerienceProject/vendor_qcom-opensource_interfaces" />
+  <remove-project name="TheXPerienceProject/android_vendor_qcom_opensource_interfaces" />
   <remove-project name="platform/vendor/qcom-opensource/usb" />
 
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="Arrow" revision="arrow-12.0" />
