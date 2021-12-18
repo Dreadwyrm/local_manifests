@@ -53,6 +53,10 @@
   <project path="device/xperience/sepolicy" name="android_device_xperience_sepolicy" remote="Me" revision="xpe-16.0" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="Me" revision="xpe-16.0-caf" />
 
+  <!-- Custom packages/apps/Settings -->
+  <remove-project name="TheXPerienceProject/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="Me" revision="xpe-16.0-caf" />
+
   <!-- Vendor Stuff -->
   <remove-project name="TheXPerienceProject/vendor_qcom-opensource_power" />
   <remove-project name="TheXPerienceProject/android_vendor_qcom_opensource_interfaces" />
