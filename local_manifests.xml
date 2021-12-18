@@ -10,6 +10,9 @@
   <remote name="AD"
           fetch="https://github.com/ArrowOS-Devices" />
 
+  <remote name="Conq"
+          fetch="https://github.com/ConquerOS" />
+
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="Me" revision="xpe" />
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="AD" revision="arrow-12.0" />
@@ -22,10 +25,12 @@
   <remove-project name="TheXPerienceProject/android_hardware_qcom_audio" />
   <remove-project name="TheXPerienceProject/android_hardware_qcom_display" />
   <remove-project name="TheXPerienceProject/android_hardware_qcom_media" />
+  <remove-project name="TheXPerienceProject/android_hardware_qcom_wlan" />
 
   <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="Conq" revision="twelve" />
 
   <!-- NFC Stuff -->
   <remove-project name="platform/packages/apps/Nfc" />
