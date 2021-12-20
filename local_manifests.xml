@@ -10,11 +10,8 @@
   <remote name="AD"
           fetch="https://github.com/ArrowOS-Devices" />
 
-  <remote name="Conq"
-          fetch="https://github.com/ConquerOS" />
-
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="Me" revision="xpe" />
+  <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="Me" revision="superior" />
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo_twelve" remote="Me" revision="twelve" />
   <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="AD" revision="arrow-12.0" />
   
@@ -22,24 +19,20 @@
   <project path="vendor/miuicamera" name="android_vendor_miuicamera" remote="AD" revision="arrow-12.0-a3" />
   
   <!-- Hardware Stuff -->
-  <remove-project name="TheXPerienceProject/android_hardware_qcom_audio" />
-  <remove-project name="TheXPerienceProject/android_hardware_qcom_display" />
-  <remove-project name="TheXPerienceProject/android_hardware_qcom_media" />
-  <remove-project name="TheXPerienceProject/android_hardware_qcom_wlan" />
+  <remove-project name="android_hardware_qcom_audio" />
+  <remove-project name="android_hardware_qcom_display" />
+  <remove-project name="android_hardware_qcom_media" />
 
   <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="Conq" revision="twelve" />
 
   <!-- NFC Stuff -->
   <remove-project name="platform/packages/apps/Nfc" />
-  <remove-project name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_halimpl" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_hidlimpl" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_frameworks" />    
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc" />
+  <remove-project name="android_vendor_nxp_interfaces_opensource_nfc" />
+  <remove-project name="android_vendor_nxp_opensource_external_libnfc-nci" />
+  <remove-project name="android_vendor_nxp_opensource_halimpl" />
+  <remove-project name="android_vendor_nxp_opensource_hidlimpl" />
 
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="Arrow" revision="arrow-12.0" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="Arrow" revision="arrow-12.0" />
@@ -51,26 +44,9 @@
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
 
-  <!-- Sepolicy Stuff -->
-  <remove-project name="TheXPerienceProject/android_device_xperience_sepolicy" />
-  <remove-project name="TheXPerienceProject/android_device_qcom_sepolicy_vndr" />
-
-  <project path="device/xperience/sepolicy" name="android_device_xperience_sepolicy" remote="Me" revision="xpe-16.0" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="Me" revision="xpe-16.0-caf" />
-
-  <!-- Custom packages/apps/Settings -->
-  <remove-project name="TheXPerienceProject/android_packages_apps_Settings" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="Me" revision="xpe-16.0-caf" />
-
   <!-- Vendor Stuff -->
-  <remove-project name="TheXPerienceProject/vendor_qcom-opensource_power" />
-  <remove-project name="TheXPerienceProject/android_vendor_qcom_opensource_interfaces" />
-  <remove-project name="TheXPerienceProject/android_vendor_xperience" />
-  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <remove-project name="android_vendor_qcom_opensource_power" />
 
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="Arrow" revision="arrow-12.0" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="Arrow" revision="arrow-12.0" />
-  <project path="vendor/xperience" name="android_vendor_xperience" remote="Me" revision="xpe-16.0-caf" />
-  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="Arrow" revision="arrow-12.0" />
 
 </manifest>
