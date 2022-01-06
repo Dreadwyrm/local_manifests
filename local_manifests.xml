@@ -16,7 +16,7 @@
   <!-- Trees -->
   <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="Me" revision="yaap" />
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo_twelve" remote="Me" revision="twelve" />
-  <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="AD" revision="arrow-12.0" />
+  <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="Me" revision="A12" />
   
   <!-- MIUI Camera -->
   <project path="vendor/miuicamera" name="android_vendor_miuicamera" remote="AD" revision="arrow-12.0-a3" />
