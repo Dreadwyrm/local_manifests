@@ -22,4 +22,8 @@
   <remove-project name="platform_vendor_bliss" />
   <project path="vendor/bliss" name="platform_vendor_bliss" remote="Me" revision="arcadia" />
 
+  <!-- halimpl -->
+  <remove-project name="platform_vendor_bliss" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Me" revision="twelve-sn100x" />
+
 </manifest>
