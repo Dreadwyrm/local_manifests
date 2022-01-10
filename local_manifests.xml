@@ -31,4 +31,11 @@
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
 
+  <!-- Frameworks stuff -->
+  <remove-project name="platform_frameworks_base" />
+  <remove-project name="platform_frameworks_av" />
+
+  <project path="frameworks/base" name="bliss_frameworks_base" remote="Me" revision="arcadia" />
+  <project path="frameworks/av" name="bliss_frameworks_av" remote="Me" revision="arcadia" />
+
 </manifest>
