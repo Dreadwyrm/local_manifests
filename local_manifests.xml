@@ -7,24 +7,34 @@
   <remote name="Arrow"
           fetch="https://github.com/ArrowOS" />
 
-  <remote name="AD"
-          fetch="https://github.com/ArrowOS-Devices" />
+  <remote name="DFG"
+          fetch="https://github.com/DerpFest-ginkgo" />
 
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo" remote="Me" revision="A12" />
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo_twelve" remote="Me" revision="twelve" />
-  <project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo" remote="AD" revision="arrow-12.0" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="DFG" revision="13" />
+  <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="DFG" revision="omaga" />
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="DFG" revision="13" />
   
   <!-- MIUI Camera -->
-  <project path="vendor/miuicamera" name="android_vendor_miuicamera" remote="AD" revision="arrow-12.0-a3" />
+  <project path="vendor/miuicamera" name="vendor_miuicamera" remote="DFG" revision="arrow-12.0-a3" />
   
   <!-- Hardware Stuff -->
-  <remove-project name="android_hardware_qcom_audio" />
-  <remove-project name="android_hardware_qcom_display" />
-  <remove-project name="android_hardware_qcom_media" />
+  <remove-project name="hardware_qcom_audio" />
+  <remove-project name="hardware_qcom_display" />
+  <remove-project name="hardware_qcom_media" />
 
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="Arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="Arrow" revision="arrow-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Arrow" revision="arrow-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="Arrow" revision="arrow-13.0-caf-sm8150" />
+
+  <!-- Custom FWB -->
+  <remove-project name="frameworks_base" />
+  <remove-project name="frameworks_av" />
+
+  <project path="frameworks/base" name="frameworks_base" remote="DFG" revision="13" />
+  <project path="frameworks/av" name="frameworks_av" remote="DFG" revision="13" />
+
+  <!-- Vendor Stuff --> 
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="Arrow" revision="arrow-13.0" />
 
 </manifest>
