@@ -34,7 +34,4 @@
   <project path="frameworks/base" name="frameworks_base" remote="DFG" revision="13" />
   <project path="frameworks/av" name="frameworks_av" remote="DFG" revision="13" />
 
-  <!-- Vendor Stuff --> 
-  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="Arrow" revision="arrow-13.0" />
-
 </manifest>
