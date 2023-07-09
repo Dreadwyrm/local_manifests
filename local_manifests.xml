@@ -31,7 +31,7 @@
   <remove-project name="frameworks_base" />
   <remove-project name="frameworks_av" />
 
-  <project path="frameworks/base" name="frameworks_base" remote="DFG" revision="13" />
+  <project path="frameworks/base" name="frameworks_base" remote="Me" revision="13" />
   <project path="frameworks/av" name="frameworks_av" remote="DFG" revision="13" />
 
   <!-- Vendor stuff -->
